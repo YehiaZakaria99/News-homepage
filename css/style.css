@@ -211,3 +211,17 @@ p {
 }
 
 /* End Home */
+/* attribution */
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.dark-mode .attribution {
+  color: var(--neutral-off-white);
+}
+.dark-mode .attribution a {
+  color: hsl(228, 41%, 59%);
+}
