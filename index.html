@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta
+      name="description"
+      content="This News Homepage is designed for users who enjoy staying updated with the latest trends in technology, innovation, and business. It caters to readers who prefer a visually engaging and easy-to-navigate experience."
+    />
+    <!-- css bootstrap -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- css bootstrap-icons -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css fontawesome -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <!-- css main -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body class="">
+    <div class="container position-relative">
+      <!-- <div class="overlay position-absolute w-100 h-100 start-0 top-0"></div> -->
+      <header class="">
+        <!-- NavBar -->
+        <nav>
+          <div
+            class="nav-box py-4 d-flex flex-wrap justify-content-between align-items-center"
+          >
+            <a class="text-decoration-none logo" href="#">
+              <img
+                class="light-logo img-fluid"
+                src="assets/images/logo.svg"
+                alt="logo"
+              />
+              <img
+                class="dark-logo img-fluid"
+                src="assets/images/logo-dark.svg"
+                alt="logo"
+              />
+            </a>
+            <div class="d-flex">
+              <div class="links">
+                <!-- Mobile -->
+                <div class="menu-bar">
+                  <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
+                <div class="nav-links px-3 px-md-0">
+                  <div class="mb-5 mb-md-0 py-4 py-md-0">
+                    <div class="mobile-mode" modeBtn>
+                      <button
+                        darkModeBtn
+                        class="dark-mode border-0 p-0 bg-transparent"
+                      >
+                        <i class="bi bi-moon-stars-fill"></i>
+                      </button>
+                      <button
+                        lightModeBtn
+                        class="light-mode border-0 p-0 bg-transparent"
+                      >
+                        <i class="bi bi-brightness-high"></i>
+                      </button>
+                    </div>
+                    <button class="close-btn border-0 p-0 bg-transparent">
+                      <i class="fa-solid fa-xmark fa-2x"></i>
+                    </button>
+                  </div>
+                  <ul class="nav-list list-unstyled mb-0">
+                    <li class="nav-item">
+                      <a
+                        class="link-nav active fw-medium py-2 py-md-0 text-capitalize"
+                        href="#"
+                        >home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="link-nav fw-medium py-2 py-md-0 text-capitalize"
+                        href="#new"
+                        >new</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="link-nav fw-medium py-2 py-md-0 text-capitalize"
+                        href="#popular"
+                        >popular</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="link-nav fw-medium py-2 py-md-0 text-capitalize"
+                        href="#trending"
+                        >trending</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="link-nav fw-medium py-2 py-md-0 text-capitalize"
+                        href="#categories"
+                        >categories</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ms-3 mode" modeBtn>
+                <button
+                  darkModeBtn
+                  class="dark-mode border-0 p-0 bg-transparent"
+                >
+                  <i class="bi bi-moon-stars-fill"></i>
+                </button>
+                <button
+                  lightModeBtn
+                  class="light-mode border-0 p-0 bg-transparent"
+                >
+                  <i class="bi bi-brightness-high"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!--End NavBar -->
+      </header>
+      <main class="">
+        <!-- Home Section -->
+        <section class="home">
+          <div class="contianer py-4">
+            <div class="row gy-5">
+              <div class="col-12 col-lg-8">
+                <div class="box h-100">
+                  <div class="img">
+                    <img
+                      class="d-block d-lg-none img-mobile w-100"
+                      src="assets/images/image-web-3-mobile.jpg"
+                      alt="img-mobile"
+                    />
+                    <img
+                      class="d-none d-lg-block img-desktop w-100"
+                      src="assets/images/image-web-3-desktop.jpg"
+                      alt="img-desktop"
+                    />
+                  </div>
+                  <div class="row gx-0 gy-2 mt-4">
+                    <div class="col-12 col-lg-5">
+                      <h1 class="box-title fw-bold mb-0">
+                        The Bright Future of Web 3.0 ?
+                      </h1>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                      <div
+                        class="box ms-lg-4 px-0 d-flex flex-column justify-content-between"
+                      >
+                        <p class="text-gray">
+                          We dive into the next evolution of the web that claims
+                          to put the power of the platforms back into the hands
+                          of the people. But is it really fulfilling its
+                          promise?
+                        </p>
+                        <div>
+                          <button class="read-more-btn btn fw-bold px-4">
+                            Read More
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="box h-100 new overflow-auto px-4">
+                  <h2 class="text-orange py-3 mt-3">New</h2>
+                  <div class="boxes">
+                    <div class="new-box py-3">
+                      <h4 class="mb-0">
+                        <a href="#">Hydrogen VS Electric Cars</a>
+                      </h4>
+                      <p class="mt-3 mb-0 text-gray">
+                        Will hydrogen-fueled cars ever catch up to EVs?
+                      </p>
+                    </div>
+                    <div class="new-box py-3">
+                      <h4 class="mb-0">
+                        <a href="#">The Downsides of AI Artistry</a>
+                      </h4>
+                      <p class="mt-3 mb-0 text-gray">
+                        What are the possible adverse effects of on-demand AI
+                        image generation?
+                      </p>
+                    </div>
+                    <div class="new-box py-3">
+                      <h4 class="mb-0">
+                        <a href="#">Is VC Funding Drying Up?</a>
+                      </h4>
+                      <p class="mt-3 mb-0 text-gray">
+                        Private funding by VC firms is down 50% YOY. We take a
+                        look at what that means.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gy-5 mt-5 py-4">
+              <div class="col-12 col-lg-4">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="box">
+                      <div class="img">
+                        <img
+                          class="w-100 img-fluid"
+                          src="assets/images/image-retro-pcs.jpg"
+                          alt="image-retro-pcs"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div
+                      class="articles-box px-2 h-100 d-flex flex-column justify-content-between"
+                    >
+                      <span class="d-block mb-0 fw-bold fs-4 text-red">01</span>
+                      <h5 class="fw-bold mb-0">
+                        <a href="#">Reviving Retro PCs</a>
+                      </h5>
+                      <p class="mb-0 text-gray">
+                        What happens when old PCs are given modern upgrades?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="box">
+                      <div class="img">
+                        <img
+                          class="w-100 img-fluid"
+                          src="assets/images/image-top-laptops.jpg"
+                          alt="image-top-laptops"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div
+                      class="articles-box px-2 h-100 d-flex flex-column justify-content-between"
+                    >
+                      <span class="d-block mb-0 fw-bold fs-4 text-red">02</span>
+                      <h5 class="fw-bold mb-0">
+                        <a href="#">Top 10 Laptops of 2022</a>
+                      </h5>
+                      <p class="mb-0 text-gray">
+                        Our best picks for various needs and budgets.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="box">
+                      <div class="img">
+                        <img
+                          class="w-100 img-fluid"
+                          src="assets/images/image-gaming-growth.jpg"
+                          alt="image-gaming-growth"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div
+                      class="articles-box px-2 h-100 d-flex flex-column justify-content-between"
+                    >
+                      <span class="d-block mb-0 fw-bold fs-4 text-red">03</span>
+                      <h5 class="fw-bold mb-0">
+                        <a href="#">The Growth of Gaming</a>
+                      </h5>
+                      <p class="mb-0 text-gray">
+                        How the pandemic has sparked fresh opportunities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Home Section -->
+      </main>
+    </div>
+
+    <!-- js bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jquery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- js main -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+          <div>
+            <div class="row">
+              <div class="col-lg-8 col-12">
+                <div class="box">
+                  <div class="img">
+                    <img
+                      class="w-100"
+                      src="assets/images/image-web-3-desktop.jpg"
+                      alt="image-web"
+                    />
+                  </div>
+                  <div class="row g-0 pt-4">
+                    <div class="col-md-4 col-12">
+                      <div class="box">
+                        <h1 class="fw-bold mb-0 py-3">The Bright Future of Web 3.0 ?</h1>
+                      </div>
+                    </div>
+                    <div class="col-md-8 col-12">
+                      <div class="box px-0 d-flex flex-column justify-content-between">
+                        <p class="text-gray">
+                          We dive into the next evolution of the web that claims
+                          to put the power of the platforms back into the hands
+                          of the people. But is it really fulfilling its
+                          promise?
+                        </p>
+                        <div><button class="read-more-btn btn fw-bold px-4">Read More</button></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="box py-4 new h-100 d-flex flex-column justify-content-around">
+                  <h2 class="text-orange">New</h2>
+                  <div class="boxes flex-grow-1 d-flex flex-column justify-content-around">
+                    <div class="new-box py-3">
+                      <h4><a href="#">Hydrogen VS Electric Cars</a></h4>
+                      <p class="">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </div>
+                    <div class="new-box py-3">
+                      <h4><a href="#">The Downsides of AI Artistry</a></h4>
+                      <p class="">What are the possible adverse effects of on-demand AI image generation?</p>
+                    </div>
+                    <div class="new-box pt-3">
+                      <h4><a href="#">Is VC Funding Drying Up?</a></h4>
+                      <p class="">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            
+          </div>
+
+
+-->
